@@ -1,46 +1,89 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
-.cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap:wrap ;
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.card{
-flex-basis: 250px;
-background-color: grey;
-margin: 10px;
-border-radius: 10px;
-display: flex;
-flex-direction: column;
+.card {
+  flex-basis: 250px;
+  background-color: rgb(224, 223, 223);
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.card>button{
+.card > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.card > button {
+  margin-top: auto;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btm.red {
+  background-color: red;
+}
+.btm.blue {
+  background-color: blue;
+}
+.btm.purple {
+  background-color: purple;
+}
+
+.stars > img {
+  width: 15px;
+}
+.price.red{
+    color: red;
+}
+.price.blue{
+    color: blue;
+}
+.price.purple{
+    color:purple;
+}
+.price{
+    text-align: center;
+    font-weight: 900;
     margin-top: auto;
-    border: none;
-    color: white;
+}
+.card>h2{
     text-transform: uppercase;
 }
-.btm.red{
-    background-color: red;
+.info>p{
+    text-align: center;
+    font-weight: 200;
+  
 }
-.btm.blue{
-    background-color: blue;
+.stars{
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
 }
-.btm.purple{
-    background-color: purple;
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
-
-
-
-
-.stars>img{
-    width: 15px;
-
+.card:hover{
+    transform: scale(1.03);
+}
+.card > img:hover{
+    transform: scaleX(-1);
 }
