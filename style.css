@@ -21,11 +21,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.8s , background-color 1.5s 1s;
 }
 .card > img {
   width: 200px;
   height: 200px;
   object-fit: cover;
+  transition: transform 0.8s 0.5s;
 }
 .card > button {
   margin-top: auto;
@@ -49,41 +51,71 @@ img {
 .stars > img {
   width: 15px;
 }
-.price.red{
-    color: red;
+.price.red {
+  color: red;
 }
-.price.blue{
-    color: blue;
+.price.blue {
+  color: blue;
 }
-.price.purple{
-    color:purple;
+.price.purple {
+  color: purple;
 }
-.price{
-    text-align: center;
-    font-weight: 900;
-    margin-top: auto;
+.price {
+  text-align: center;
+  font-weight: 900;
+  margin-top: auto;
 }
-.card>h2{
-    text-transform: uppercase;
+.card > h2 {
+  text-transform: uppercase;
 }
-.info>p{
-    text-align: center;
-    font-weight: 200;
-  
+.info > p {
+  text-align: center;
+  font-weight: 200;
 }
-.stars{
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
+.stars {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
 }
-.info{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
-.card:hover{
-    transform: scale(1.03);
+.card:hover {
+  transform: scale(1.03);
+  /* transition: transform 0.6s; */
+  background-color: blueviolet;
 }
-.card > img:hover{
-    transform: scaleX(-1);
+.card > img:hover {
+  transform: scaleX(-1);
+}
+.reklam {
+  position: fixed;
+  width: 300px;
+  height: 150px;
+  background-color: #5a5afa;
+  top: 30vh;
+  right: -300px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+  transition: right 0.8s 0.3s;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.tab {
+  position: absolute;
+  color: red;
+  background-color: white;
+  padding: 5px;
+  transform: rotate(-90deg);
+  top: 60px;
+  left: -51px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+}
+.reklam:hover{
+  right: 0px;
 }
